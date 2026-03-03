@@ -758,7 +758,7 @@ def AddSkiaGoldTestOptions(parser):
       action='store_true',
       default=False,
       help="Don't use the serve account provided by LUCI for authentication "
-      'with Skia Gold, instead relying on gsutil to be pre-authenticated. '
+      'with Skia Gold, instead relying on gcloud storage to be pre-authenticated. '
       'Meant for testing locally instead of on the bots.')
   parser.add_argument(
       '--bypass-skia-gold-functionality',
