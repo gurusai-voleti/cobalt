@@ -256,8 +256,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-arm/stripped/trace_processor_shell",
       "gs://perfetto-luci-artifacts//android-arm/trace_processor_shell"
@@ -276,10 +277,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-arm.Artifact upload.gsutil upload",
+    "name": "android-arm.Artifact upload.gcloud upload",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm/trace_processor_shell@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm/trace_processor_shell@@@"
     ]
   },
   {
@@ -368,8 +369,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-arm/stripped/traceconv",
       "gs://perfetto-luci-artifacts//android-arm/traceconv"
@@ -388,10 +390,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-arm.Artifact upload.gsutil upload (2)",
+    "name": "android-arm.Artifact upload.gcloud upload (2)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm/traceconv@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm/traceconv@@@"
     ]
   },
   {
@@ -480,8 +482,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-arm/stripped/tracebox",
       "gs://perfetto-luci-artifacts//android-arm/tracebox"
@@ -500,10 +503,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-arm.Artifact upload.gsutil upload (3)",
+    "name": "android-arm.Artifact upload.gcloud upload (3)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm/tracebox@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm/tracebox@@@"
     ]
   },
   {
@@ -592,8 +595,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-arm/stripped/perfetto",
       "gs://perfetto-luci-artifacts//android-arm/perfetto"
@@ -612,10 +616,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-arm.Artifact upload.gsutil upload (4)",
+    "name": "android-arm.Artifact upload.gcloud upload (4)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm/perfetto@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm/perfetto@@@"
     ]
   },
   {
@@ -704,8 +708,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-arm/stripped/traced",
       "gs://perfetto-luci-artifacts//android-arm/traced"
@@ -724,10 +729,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-arm.Artifact upload.gsutil upload (5)",
+    "name": "android-arm.Artifact upload.gcloud upload (5)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm/traced@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm/traced@@@"
     ]
   },
   {
@@ -816,8 +821,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-arm/stripped/traced_probes",
       "gs://perfetto-luci-artifacts//android-arm/traced_probes"
@@ -836,10 +842,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-arm.Artifact upload.gsutil upload (6)",
+    "name": "android-arm.Artifact upload.gcloud upload (6)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm/traced_probes@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm/traced_probes@@@"
     ]
   },
   {
@@ -1021,8 +1027,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-arm64/stripped/trace_processor_shell",
       "gs://perfetto-luci-artifacts//android-arm64/trace_processor_shell"
@@ -1041,10 +1048,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-arm64.Artifact upload.gsutil upload",
+    "name": "android-arm64.Artifact upload.gcloud upload",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm64/trace_processor_shell@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm64/trace_processor_shell@@@"
     ]
   },
   {
@@ -1133,8 +1140,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-arm64/stripped/traceconv",
       "gs://perfetto-luci-artifacts//android-arm64/traceconv"
@@ -1153,10 +1161,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-arm64.Artifact upload.gsutil upload (2)",
+    "name": "android-arm64.Artifact upload.gcloud upload (2)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm64/traceconv@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm64/traceconv@@@"
     ]
   },
   {
@@ -1245,8 +1253,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-arm64/stripped/tracebox",
       "gs://perfetto-luci-artifacts//android-arm64/tracebox"
@@ -1265,10 +1274,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-arm64.Artifact upload.gsutil upload (3)",
+    "name": "android-arm64.Artifact upload.gcloud upload (3)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm64/tracebox@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm64/tracebox@@@"
     ]
   },
   {
@@ -1357,8 +1366,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-arm64/stripped/perfetto",
       "gs://perfetto-luci-artifacts//android-arm64/perfetto"
@@ -1377,10 +1387,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-arm64.Artifact upload.gsutil upload (4)",
+    "name": "android-arm64.Artifact upload.gcloud upload (4)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm64/perfetto@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm64/perfetto@@@"
     ]
   },
   {
@@ -1469,8 +1479,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-arm64/stripped/traced",
       "gs://perfetto-luci-artifacts//android-arm64/traced"
@@ -1489,10 +1500,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-arm64.Artifact upload.gsutil upload (5)",
+    "name": "android-arm64.Artifact upload.gcloud upload (5)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm64/traced@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm64/traced@@@"
     ]
   },
   {
@@ -1581,8 +1592,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-arm64/stripped/traced_probes",
       "gs://perfetto-luci-artifacts//android-arm64/traced_probes"
@@ -1601,10 +1613,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-arm64.Artifact upload.gsutil upload (6)",
+    "name": "android-arm64.Artifact upload.gcloud upload (6)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm64/traced_probes@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-arm64/traced_probes@@@"
     ]
   },
   {
@@ -1786,8 +1798,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-x86/stripped/trace_processor_shell",
       "gs://perfetto-luci-artifacts//android-x86/trace_processor_shell"
@@ -1806,10 +1819,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-x86.Artifact upload.gsutil upload",
+    "name": "android-x86.Artifact upload.gcloud upload",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x86/trace_processor_shell@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x86/trace_processor_shell@@@"
     ]
   },
   {
@@ -1898,8 +1911,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-x86/stripped/traceconv",
       "gs://perfetto-luci-artifacts//android-x86/traceconv"
@@ -1918,10 +1932,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-x86.Artifact upload.gsutil upload (2)",
+    "name": "android-x86.Artifact upload.gcloud upload (2)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x86/traceconv@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x86/traceconv@@@"
     ]
   },
   {
@@ -2010,8 +2024,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-x86/stripped/tracebox",
       "gs://perfetto-luci-artifacts//android-x86/tracebox"
@@ -2030,10 +2045,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-x86.Artifact upload.gsutil upload (3)",
+    "name": "android-x86.Artifact upload.gcloud upload (3)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x86/tracebox@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x86/tracebox@@@"
     ]
   },
   {
@@ -2122,8 +2137,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-x86/stripped/perfetto",
       "gs://perfetto-luci-artifacts//android-x86/perfetto"
@@ -2142,10 +2158,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-x86.Artifact upload.gsutil upload (4)",
+    "name": "android-x86.Artifact upload.gcloud upload (4)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x86/perfetto@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x86/perfetto@@@"
     ]
   },
   {
@@ -2234,8 +2250,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-x86/stripped/traced",
       "gs://perfetto-luci-artifacts//android-x86/traced"
@@ -2254,10 +2271,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-x86.Artifact upload.gsutil upload (5)",
+    "name": "android-x86.Artifact upload.gcloud upload (5)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x86/traced@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x86/traced@@@"
     ]
   },
   {
@@ -2346,8 +2363,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-x86/stripped/traced_probes",
       "gs://perfetto-luci-artifacts//android-x86/traced_probes"
@@ -2366,10 +2384,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-x86.Artifact upload.gsutil upload (6)",
+    "name": "android-x86.Artifact upload.gcloud upload (6)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x86/traced_probes@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x86/traced_probes@@@"
     ]
   },
   {
@@ -2551,8 +2569,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-x64/stripped/trace_processor_shell",
       "gs://perfetto-luci-artifacts//android-x64/trace_processor_shell"
@@ -2571,10 +2590,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-x64.Artifact upload.gsutil upload",
+    "name": "android-x64.Artifact upload.gcloud upload",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x64/trace_processor_shell@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x64/trace_processor_shell@@@"
     ]
   },
   {
@@ -2663,8 +2682,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-x64/stripped/traceconv",
       "gs://perfetto-luci-artifacts//android-x64/traceconv"
@@ -2683,10 +2703,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-x64.Artifact upload.gsutil upload (2)",
+    "name": "android-x64.Artifact upload.gcloud upload (2)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x64/traceconv@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x64/traceconv@@@"
     ]
   },
   {
@@ -2775,8 +2795,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-x64/stripped/tracebox",
       "gs://perfetto-luci-artifacts//android-x64/tracebox"
@@ -2795,10 +2816,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-x64.Artifact upload.gsutil upload (3)",
+    "name": "android-x64.Artifact upload.gcloud upload (3)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x64/tracebox@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x64/tracebox@@@"
     ]
   },
   {
@@ -2887,8 +2908,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-x64/stripped/perfetto",
       "gs://perfetto-luci-artifacts//android-x64/perfetto"
@@ -2907,10 +2929,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-x64.Artifact upload.gsutil upload (4)",
+    "name": "android-x64.Artifact upload.gcloud upload (4)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x64/perfetto@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x64/perfetto@@@"
     ]
   },
   {
@@ -2999,8 +3021,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-x64/stripped/traced",
       "gs://perfetto-luci-artifacts//android-x64/traced"
@@ -3019,10 +3042,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-x64.Artifact upload.gsutil upload (5)",
+    "name": "android-x64.Artifact upload.gcloud upload (5)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x64/traced@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x64/traced@@@"
     ]
   },
   {
@@ -3111,8 +3134,9 @@
       "-u",
       "RECIPE_MODULE[depot_tools::gsutil]/resources/gsutil_smart_retry.py",
       "--",
-      "RECIPE_REPO[depot_tools]/gsutil.py",
+      "RECIPE_REPO[depot_tools]/gcloud.py",
       "----",
+      "storage",
       "cp",
       "[CACHE]/builder/perfetto/out/android-x64/stripped/traced_probes",
       "gs://perfetto-luci-artifacts//android-x64/traced_probes"
@@ -3131,10 +3155,10 @@
         "hostname": "rdbhost"
       }
     },
-    "name": "android-x64.Artifact upload.gsutil upload (6)",
+    "name": "android-x64.Artifact upload.gcloud upload (6)",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@2@@@",
-      "@@@STEP_LINK@gsutil.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x64/traced_probes@@@"
+      "@@@STEP_LINK@gcloud.upload@https://storage.cloud.google.com/perfetto-luci-artifacts//android-x64/traced_probes@@@"
     ]
   },
   {

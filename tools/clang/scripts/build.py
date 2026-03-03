@@ -326,7 +326,7 @@ def BuildLibXml2():
   # $ VER=v2.9.12
   # $ curl -O \
   #   https://gitlab.gnome.org/GNOME/libxml2/-/archive/$VER/libxml2-$VER.tar.gz
-  # $ gsutil cp -n -a public-read libxml2-$VER.tar.gz \
+  # $ gcloud storage cp --no-clobber --predefined-acl=public-read libxml2-$VER.tar.gz \
   #   gs://chromium-browser-clang/tools
 
   dirs = GetLibXml2Dirs()
@@ -437,7 +437,7 @@ def BuildZStd():
   # The zstd-1.5.5.tar.gz was downloaded from
   #   https://github.com/facebook/zstd/releases/
   # and uploaded as follows.
-  # $ gsutil cp -n -a public-read zstd-$VER.tar.gz \
+  # $ gcloud storage cp --no-clobber --predefined-acl=public-read zstd-$VER.tar.gz \
   #   gs://chromium-browser-clang/tools
 
   dirs = ZStdDirs()
